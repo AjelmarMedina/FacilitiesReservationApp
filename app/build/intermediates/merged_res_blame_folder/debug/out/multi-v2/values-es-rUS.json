@@ -4,41 +4,7 @@
             "outputFile": "com.nu.dasmarinas.facilities.app-mergeDebugResources-60:/values-es-rUS/values-es-rUS.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\6fd61f577e832f73d0e618ee74d65532\\transformed\\core-1.12.0\\res\\values-es-rUS\\values-es-rUS.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,356,454,561,667,787",
-                        "endColumns": "98,101,99,97,106,105,119,100",
-                        "endOffsets": "149,251,351,449,556,662,782,883"
-                    },
-                    "to": {
-                        "startLines": "6,7,8,9,10,11,12,63",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "576,675,777,877,975,1082,1188,6490",
-                        "endColumns": "98,101,99,97,106,105,119,100",
-                        "endOffsets": "670,772,872,970,1077,1183,1303,6586"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\64316bf4457822025f8bd76e2fa99eab\\transformed\\foundation-release\\res\\values-es-rUS\\values-es-rUS.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,155",
-                        "endColumns": "99,101",
-                        "endOffsets": "150,252"
-                    },
-                    "to": {
-                        "startLines": "80,81",
-                        "startColumns": "4,4",
-                        "startOffsets": "8105,8205",
-                        "endColumns": "99,101",
-                        "endOffsets": "8200,8302"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\b9f3d83b4c6280bd91d04994c9f720d1\\transformed\\ui-release\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\7f9411f2d35d1d18259c944a8db64cb0\\transformed\\jetified-ui-release\\res\\values-es-rUS\\values-es-rUS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\9c8b9b449c435108c0ff066aa97d7c16\\transformed\\material3-1.1.2\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\69eafa297704e4cf82a16a62a89bc5cc\\transformed\\jetified-foundation-release\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,155",
+                        "endColumns": "99,101",
+                        "endOffsets": "150,252"
+                    },
+                    "to": {
+                        "startLines": "80,81",
+                        "startColumns": "4,4",
+                        "startOffsets": "8105,8205",
+                        "endColumns": "99,101",
+                        "endOffsets": "8200,8302"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\0cfc8785eea0d2391284eac2821e3d9e\\transformed\\core-1.12.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,356,454,561,667,787",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "149,251,351,449,556,662,782,883"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12,63",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "576,675,777,877,975,1082,1188,6490",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "670,772,872,970,1077,1183,1303,6586"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\iOLO\\.gradle\\caches\\transforms-3\\05ade78344f07c5eb619764f9dc1b5dd\\transformed\\jetified-material3-1.1.2\\res\\values-es-rUS\\values-es-rUS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
