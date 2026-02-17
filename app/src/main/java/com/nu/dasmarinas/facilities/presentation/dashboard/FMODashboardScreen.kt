@@ -14,10 +14,35 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.nu.dasmarinas.facilities.data.mock.MockDataProvider
 import com.nu.dasmarinas.facilities.domain.model.Reservation
 import com.nu.dasmarinas.facilities.domain.model.User
+import com.nu.dasmarinas.facilities.presentation.navigation.Screen
+
+@Preview
+@Composable
+fun FMODashboardPreview() {
+    FMODashboardScreen(
+        user = MockDataProvider.fmoUser,
+        pendingReviewCount = 0,
+        approvedCount = MockDataProvider.getApprovedReservations().size,
+        totalReservations = MockDataProvider.reservations.size,
+        activeFacilities = MockDataProvider.facilities.size,
+        pendingReservations = MockDataProvider.getPendingReservations(),
+        upcomingEvents = MockDataProvider.getApprovedReservations().take(3),
+        onApprovalQueueClick = {  },
+        onCalendarClick = { },
+        onAllReservationsClick = { },
+        onReportsClick = { /* Navigate to reports */ },
+        onNotificationsClick = { },
+        onReservationClick = { },
+        onApproveClick = { id -> /* Handle approve */ },
+        onRejectClick = { id -> /* Handle reject */ }
+    )
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
