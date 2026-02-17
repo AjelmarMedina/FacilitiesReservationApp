@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation10.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation10.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation05.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation05.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation11.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation11.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation06.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation06.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/xml_data_extraction_rules.xml.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation03.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation03.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation07.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation07.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation08.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation08.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation02.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation02.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/xml_backup_rules.xml.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation01.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation01.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation09.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation09.png"
+    },
+    {
+        "merged": "com.nu.dasmarinas.facilities.app-merged_res-62:/drawable_facilitiesreservation04.png.flat",
+        "source": "com.nu.dasmarinas.facilities.app-main-64:/drawable/facilitiesreservation04.png"
+    }
+]

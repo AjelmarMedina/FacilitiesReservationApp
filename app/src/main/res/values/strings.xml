@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NU Facilities</string>
+    
+    <!-- Login Screen -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="nu_email_required">NU email required for internal users</string>
+    
+    <!-- Dashboard -->
+    <string name="welcome_back_user">Welcome back,</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="new_reservation">New Reservation</string>
+    <string name="view_calendar">View Calendar</string>
+    <string name="your_reservations">Your Reservations</string>
+    <string name="view_all">View All</string>
+    <string name="no_reservations_yet">No reservations yet</string>
+    <string name="create_first_reservation">Create your first reservation</string>
+    
+    <!-- Reservation Status -->
+    <string name="pending">Pending</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="under_review">Under Review</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="upcoming">Upcoming</string>
+    
+    <!-- Navigation -->
+    <string name="dashboard">Dashboard</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="calendar">Calendar</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    
+    <!-- FMO Dashboard -->
+    <string name="approval_queue">Approval Queue</string>
+    <string name="all_reservations">All Reservations</string>
+    <string name="reports">Reports</string>
+    <string name="pending_approvals">Pending Approvals</string>
+    
+    <!-- Privacy Office -->
+    <string name="audit_logs">Audit Logs</string>
+    <string name="view_all_data">View All Data</string>
+    <string name="retention_report">Retention Report</string>
+    <string name="compliance">Compliance</string>
+    <string name="data_privacy_overview">Data Privacy Overview</string>
+    
+    <!-- Reservation Form -->
+    <string name="event_details">Event Details</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_type">Event Type</string>
+    <string name="event_description">Event Description</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="expected_attendees">Number of expected attendees</string>
+    <string name="organizer_information">Organizer Information</string>
+    <string name="organization">Organization</string>
+    <string name="adviser_name">Adviser Name</string>
+    <string name="contact_number">Contact Number</string>
+    
+    <!-- Facility -->
+    <string name="select_facility">Select Facility</string>
+    <string name="facility_calendar">Facility Calendar</string>
+    <string name="filter_by_facility">Filter by Facility</string>
+    
+    <!-- Equipment -->
+    <string name="equipment_requested">Equipment Requested</string>
+    
+    <!-- Actions -->
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="request_changes">Request Changes</string>
+    <string name="export_to_csv">Export to CSV</string>
+    <string name="export_to_pdf">Export to PDF</string>
+    
+    <!-- Notifications -->
+    <string name="no_notifications_yet">No notifications yet</string>
+    <string name="notification_preferences">Notification Preferences</string>
+    <string name="reservation_status_updates">Reservation status updates</string>
+    <string name="event_reminders">Event reminders</string>
+    <string name="system_announcements">System announcements</string>
+    
+    <!-- Copyright -->
+    <string name="copyright">© 2026 National University - Dasmariñas</string>
+</resources>

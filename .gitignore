@@ -1,5 +1,56 @@
-# Project exclude paths
-/.gradle/
-/app/
-/build/
-/gradle/
+# ===== Android Studio / IntelliJ =====
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ===== Gradle =====
+.gradle/
+build/
+**/build/
+
+# Gradle wrapper JAR is typically committed, so do NOT ignore:
+# gradle/wrapper/gradle-wrapper.jar
+
+# ===== Local config =====
+local.properties
+# Optional: keystore files if not intended for repo
+*.jks
+*.keystore
+
+# ===== Android build outputs =====
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+
+# ===== Kotlin / Java =====
+*.log
+*.tmp
+*.bak
+
+# ===== Native build =====
+.externalNativeBuild/
+.cxx/
+
+# ===== macOS =====
+.DS_Store
+
+# ===== Windows =====
+Thumbs.db
+desktop.ini
+
+# ===== Linux =====
+*~
+
+# ===== Firebase / Google Services =====
+# Keep google-services.json only if project is public or intended
+# google-services.json
+
+# ===== Secrets =====
+*.env
+.env
