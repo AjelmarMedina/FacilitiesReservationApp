@@ -54,3 +54,4 @@ desktop.ini
 # ===== Secrets =====
 *.env
 .env
+/app/build/
