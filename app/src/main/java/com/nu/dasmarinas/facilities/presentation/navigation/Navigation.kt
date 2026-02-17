@@ -1,7 +1,10 @@
 package com.nu.dasmarinas.facilities.presentation.navigation
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -40,6 +43,8 @@ sealed class Screen(val route: String) {
     object AuditLogs : Screen("audit_logs")
 }
 
+@Preview
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun FacilitiesApp(
     modifier: Modifier = Modifier
