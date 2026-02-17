@@ -15,10 +15,30 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.nu.dasmarinas.facilities.data.mock.MockDataProvider
 import com.nu.dasmarinas.facilities.domain.model.Reservation
+import com.nu.dasmarinas.facilities.domain.model.ReservationStatus
 import com.nu.dasmarinas.facilities.domain.model.User
+import com.nu.dasmarinas.facilities.presentation.navigation.Screen
+
+@Preview
+@Composable
+fun StudentDashboardPreview() {
+    StudentDashboardScreen(
+        user = MockDataProvider.studentUser,
+        pendingCount = 0,
+        approvedCount = 0,
+        upcomingCount = MockDataProvider.getApprovedReservations().size,
+        recentReservations = MockDataProvider.getMyReservations(MockDataProvider.studentUser.id),
+        onNewReservationClick = {  },
+        onViewCalendarClick = {  },
+        onMyReservationsClick = {  },
+        onNotificationsClick = {  }
+    )
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
