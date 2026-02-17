@@ -14,10 +14,30 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.nu.dasmarinas.facilities.data.mock.MockDataProvider
 import com.nu.dasmarinas.facilities.domain.model.AuditLog
 import com.nu.dasmarinas.facilities.domain.model.User
+import com.nu.dasmarinas.facilities.presentation.navigation.Screen
+
+@Preview
+@Composable
+fun PrivacyOfficeDashboardPreview() {
+    PrivacyOfficeDashboardScreen(
+        user = MockDataProvider.privacyOfficer,
+        totalRecords = 5,
+        totalUsers = 4,
+        organizations = 4,
+        recentActivity = MockDataProvider.auditLogs.take(5),
+        onAuditLogsClick = {  },
+        onViewAllDataClick = {  },
+        onRetentionReportClick = { /* Navigate to retention report */ },
+        onComplianceClick = { /* Navigate to compliance */ },
+        onViewFullAuditLogClick = {  }
+    )
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
