@@ -13,9 +13,21 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.nu.dasmarinas.facilities.domain.model.UserRole
+
+@Preview
+@Composable
+fun LoginScreenPreview() {
+    LoginScreen(
+        onLoginClick = { _, _ -> },
+        onRegisterClick = { },
+        onQuickLoginClick = { }
+    )
+}
 
 @Composable
 fun LoginScreen(
