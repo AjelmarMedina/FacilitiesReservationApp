@@ -1,5 +1,7 @@
 package com.nu.dasmarinas.facilities.presentation.reservation
 
+import android.graphics.Bitmap
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -8,15 +10,36 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.google.zxing.BarcodeFormat
+import com.google.zxing.EncodeHintType
+import com.google.zxing.qrcode.QRCodeWriter
+import com.nu.dasmarinas.facilities.data.mock.MockDataProvider
 import com.nu.dasmarinas.facilities.domain.model.Reservation
 import com.nu.dasmarinas.facilities.domain.model.ReservationStatus
 import com.nu.dasmarinas.facilities.domain.model.Document
+import com.nu.dasmarinas.facilities.domain.model.UserRole
+
+@Preview
+@Composable
+fun ReservationDetailsPreview() {
+    ReservationDetailsScreen(
+        reservation = MockDataProvider.reservations.first(),
+        onBackClick = { },
+        onApproveClick = { /* Handle approve */ },
+        onRejectClick = { /* Handle reject */ },
+        onDocumentClick = { /* Handle document view */ },
+        canModify = true
+    )
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -165,6 +188,7 @@ fun ReservationDetailsScreen(
                         label = "Expected Attendees",
                         value = "${reservation.expectedAttendees} people"
                     )
+                    QRCode(reservation.eventTitle, generateQRCode(reservation.eventTitle))
                 }
             }
 
@@ -221,6 +245,7 @@ fun ReservationDetailsScreen(
                     reservation.organizer.adviser?.let { adviser ->
                         InfoRow(label = "Adviser", value = adviser)
                     }
+                    QRCode()
                 }
             }
 
@@ -375,7 +400,61 @@ private fun DocumentItem(
     }
 }
 
+@Composable
+private fun QRCode(
+    inputText: String = "Sample",
+    qrBitmap: Bitmap? = null,
+) {
+
+    qrBitmap?.let { bitmap ->
+        Card(
+            modifier = Modifier
+                .size(300.dp),
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+        ) {
+            Image(
+                bitmap = bitmap.asImageBitmap(),
+                contentDescription = "Generated QR Code",
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp)
+            )
+        }
+
+        // Info Text
+        Text(
+            text = "QR Code generated successfully!",
+            fontSize = 14.sp,
+            color = MaterialTheme.colorScheme.secondary,
+            modifier = Modifier.padding(top = 8.dp)
+        )
+    }
+}
+
 private fun formatTimestamp(timestamp: Long): String {
     // Replace with proper date formatting
     return "Feb 1, 2026, 06:00 PM"
+}
+
+private fun generateQRCode(text: String, size: Int = 512): Bitmap {
+    val hints = mapOf(EncodeHintType.MARGIN to 1)
+    val bitMatrix = QRCodeWriter().encode(
+        text,
+        BarcodeFormat.QR_CODE,
+        size,
+        size,
+        hints
+    )
+
+    val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.RGB_565)
+    for (x in 0 until size) {
+        for (y in 0 until size) {
+            bitmap.setPixel(
+                x, y,
+                if (bitMatrix[x, y]) android.graphics.Color.BLACK
+                else android.graphics.Color.WHITE
+            )
+        }
+    }
+    return bitmap
 }
