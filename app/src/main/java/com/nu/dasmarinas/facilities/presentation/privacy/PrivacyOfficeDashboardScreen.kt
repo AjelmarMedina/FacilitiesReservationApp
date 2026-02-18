@@ -73,7 +73,7 @@ fun PrivacyOfficeDashboardScreen(
                         fontWeight = FontWeight.Bold
                     )
                 },
-                navigationIcon = {
+                actions = {
                     IconButton(onClick = { onBackClick }) {
                         Icon(
                             Icons.Default.ArrowBack,
