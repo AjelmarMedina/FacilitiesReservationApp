@@ -13,11 +13,21 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.nu.dasmarinas.facilities.domain.model.*
 import java.time.LocalDate
 import java.time.LocalTime
+
+@Preview
+@Composable
+fun NewReservationPreview() {
+    NewReservationScreen(
+        onBackClick = {},
+        onSubmit = {}
+    )
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -402,6 +412,10 @@ private fun EventDetailsStep(
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true
             )
+        }
+
+        item {
+
         }
     }
 }
