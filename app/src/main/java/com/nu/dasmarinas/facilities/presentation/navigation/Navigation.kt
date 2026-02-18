@@ -93,6 +93,7 @@ fun FacilitiesApp(
                 user = currentUser ?: MockDataProvider.studentUser,
                 pendingCount = myReservations.count { it.status == ReservationStatus.SUBMITTED },
                 approvedCount = myReservations.count { it.status == ReservationStatus.APPROVED },
+                onBackClick = { navController.navigateUp() },
                 upcomingCount = MockDataProvider.getApprovedReservations().size,
                 recentReservations = myReservations,
                 onNewReservationClick = { navController.navigate(Screen.NewReservation.route) },

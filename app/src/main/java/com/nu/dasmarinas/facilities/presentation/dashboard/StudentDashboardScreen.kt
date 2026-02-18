@@ -34,6 +34,7 @@ fun StudentDashboardPreview() {
         upcomingCount = MockDataProvider.getApprovedReservations().size,
         recentReservations = MockDataProvider.getMyReservations(MockDataProvider.studentUser.id),
         onNewReservationClick = {  },
+        onBackClick = {  },
         onViewCalendarClick = {  },
         onMyReservationsClick = {  },
         onNotificationsClick = {  }
@@ -48,6 +49,7 @@ fun StudentDashboardScreen(
     approvedCount: Int,
     upcomingCount: Int,
     recentReservations: List<Reservation>,
+    onBackClick: () -> Unit,
     onNewReservationClick: () -> Unit,
     onViewCalendarClick: () -> Unit,
     onMyReservationsClick: () -> Unit,
@@ -66,6 +68,14 @@ fun StudentDashboardScreen(
             TopAppBar(
                 title = { },
                 actions = {
+                    IconButton(onClick = onBackClick) {
+                        Icon(
+                            Icons.Default.ArrowBack,
+                            contentDescription = "Back",
+                            tint = Color.White
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(256.dp))
                     IconButton(onClick = onNotificationsClick) {
                         BadgedBox(
                             badge = {
