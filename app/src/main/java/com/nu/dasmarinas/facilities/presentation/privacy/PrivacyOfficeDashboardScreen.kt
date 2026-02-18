@@ -35,7 +35,8 @@ fun PrivacyOfficeDashboardPreview() {
         onViewAllDataClick = {  },
         onRetentionReportClick = { /* Navigate to retention report */ },
         onComplianceClick = { /* Navigate to compliance */ },
-        onViewFullAuditLogClick = {  }
+        onViewFullAuditLogClick = {  },
+        onBackClick = { },
     )
 }
 
@@ -52,6 +53,7 @@ fun PrivacyOfficeDashboardScreen(
     onRetentionReportClick: () -> Unit,
     onComplianceClick: () -> Unit,
     onViewFullAuditLogClick: () -> Unit,
+    onBackClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val purpleGradient = Brush.verticalGradient(
@@ -72,7 +74,7 @@ fun PrivacyOfficeDashboardScreen(
                     )
                 },
                 navigationIcon = {
-                    IconButton(onClick = { /* Back */ }) {
+                    IconButton(onClick = { onBackClick }) {
                         Icon(
                             Icons.Default.ArrowBack,
                             contentDescription = "Back",

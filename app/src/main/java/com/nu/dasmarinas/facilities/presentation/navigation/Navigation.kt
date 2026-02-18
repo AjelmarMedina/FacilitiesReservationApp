@@ -138,7 +138,8 @@ fun FacilitiesApp(
                 onViewAllDataClick = { navController.navigate(Screen.AllReservations.route) },
                 onRetentionReportClick = { /* Navigate to retention report */ },
                 onComplianceClick = { /* Navigate to compliance */ },
-                onViewFullAuditLogClick = { navController.navigate(Screen.AuditLogs.route) }
+                onViewFullAuditLogClick = { navController.navigate(Screen.AuditLogs.route) },
+                onBackClick = { navController.navigateUp() },
             )
         }
         
