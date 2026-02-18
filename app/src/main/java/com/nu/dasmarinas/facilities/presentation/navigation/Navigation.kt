@@ -120,6 +120,7 @@ fun FacilitiesApp(
                 onReportsClick = { /* Navigate to reports */ },
                 onNotificationsClick = { navController.navigate(Screen.Notifications.route) },
                 onReservationClick = { id -> navController.navigate(Screen.ReservationDetails.createRoute(id)) },
+                onBackClick = { navController.navigateUp() },
                 onApproveClick = { id -> /* Handle approve */ },
                 onRejectClick = { id -> /* Handle reject */ }
             )

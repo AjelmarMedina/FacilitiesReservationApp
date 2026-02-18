@@ -40,7 +40,8 @@ fun FMODashboardPreview() {
         onNotificationsClick = { },
         onReservationClick = { },
         onApproveClick = { id -> /* Handle approve */ },
-        onRejectClick = { id -> /* Handle reject */ }
+        onRejectClick = { id -> /* Handle reject */ },
+        onBackClick = {  },
     )
 }
 
@@ -62,6 +63,7 @@ fun FMODashboardScreen(
     onReservationClick: (String) -> Unit,
     onApproveClick: (String) -> Unit,
     onRejectClick: (String) -> Unit,
+    onBackClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val blueGradient = Brush.verticalGradient(
@@ -76,6 +78,14 @@ fun FMODashboardScreen(
             TopAppBar(
                 title = { },
                 actions = {
+                    IconButton(onClick = onBackClick) {
+                        Icon(
+                            Icons.Default.ArrowBack,
+                            contentDescription = "Back",
+                            tint = Color.White
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(256.dp))
                     IconButton(onClick = onNotificationsClick) {
                         BadgedBox(
                             badge = {
