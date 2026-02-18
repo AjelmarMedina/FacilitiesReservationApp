@@ -77,7 +77,7 @@ fun FMODashboardScreen(
         topBar = {
             TopAppBar(
                 title = { },
-                actions = {
+                navigationIcon = {
                     IconButton(onClick = onBackClick) {
                         Icon(
                             Icons.Default.ArrowBack,
@@ -85,7 +85,8 @@ fun FMODashboardScreen(
                             tint = Color.White
                         )
                     }
-                    Spacer(modifier = Modifier.width(256.dp))
+                },
+                actions = {
                     IconButton(onClick = onNotificationsClick) {
                         BadgedBox(
                             badge = {

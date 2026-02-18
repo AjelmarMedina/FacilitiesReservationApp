@@ -67,7 +67,7 @@ fun StudentDashboardScreen(
         topBar = {
             TopAppBar(
                 title = { },
-                actions = {
+                navigationIcon = {
                     IconButton(onClick = onBackClick) {
                         Icon(
                             Icons.Default.ArrowBack,
@@ -75,7 +75,8 @@ fun StudentDashboardScreen(
                             tint = Color.White
                         )
                     }
-                    Spacer(modifier = Modifier.width(256.dp))
+                },
+                actions = {
                     IconButton(onClick = onNotificationsClick) {
                         BadgedBox(
                             badge = {
